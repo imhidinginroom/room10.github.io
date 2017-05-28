@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link rel="shortcut icon" href="crap/yellow.ico"/>
+		<title>ROOM | Packaged Noodles </title>
+        
+        <script src=//code.jquery.com/jquery-3.2.1.min.js></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="typed.js" type="text/javascript"></script>
+      <!--type -->
+      <script>
+    document.addEventListener('DOMContentLoaded', function(){
+
+        Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+            typeSpeed: 600,
+            backDelay: 5000,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to null for infinite loop
+            loopCount: null,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+            });
+
+            var resetElement = document.querySelector('.reset');
+            if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed')._typed.reset();
+                });
+            }
+
+          });
+
+          function newTyped(){ /* A new typed object */ }
+
+          function foo(){ console.log("Callback"); }
+        
+
+      </script>
+      <!--type -->
+
+      
+    <link rel='stylesheet' type='text/css'  href='style.css'/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    	</head>
+	<body>
+      
+    
+        <div class='fixed'>
+        
+      
+        <div class='map'>
+          <div id='title'><span>Packaged<br>Noodles</span></div>
+            <div id='room_map'>
+            <img id='room' src='crap/room.png'>
+            <div id='location'></div>
+          </div>
+          
+          <!--moving-->
+        <div class="movingtop">
+        <div class='next'>
+          <div id="next_arrow"></div>
+
+        </div>
+        <div class='back'>
+          <a href="https://imhidinginroom.github.io/room.github.io/">
+          <div id='back_arrow'></div></a>
+        </div>
+        </div>  
+          <!--type-->
+        <div>
+        <span id='start_type'></span>
+        <div class="type-wrap">
+            <div id="typed-strings">
+                <span>10</span>
+                <span>stick till the end</span>
+                <span>10</span>
+                
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+        </div> 
+          <div>
+          <p id="contact">talk to me</p>  
+          <span id="mail">im.hiding.in.room@gmail.com</span>  
+          <p id="info">twenty. student. live with parents<br>hochiminh city vietnam<br>name is tran thanh thao</p>
+          </div>  
+           
+        </div>
+        </div>  
+        <!-- contain -->
+        <div class="container">
+        <p id="content">(Perfect for a break)<br><br>Laughter in packaged noodles<br>How could we ever need more<br><br>It's hot!<br>Gathering around<br>Gathering around<br>And I was as happy<br>as per serving nutrition facts<br><br>Laughter in packaged noodles<br>How could life ever need more<br><br>Laughter in packaged noodles<br>Our time in a flow of counting more (and more)<br><br>(Our Daily)<br>(Our Daily)<br><br>(Inside me no more)<br>(Inside me no more)<br><br>Got nothing left<br>It's getting cold now<br>It's getting cold now<br>I will never be as happy<br>as when I was just a kid<br><br>Laughter in packaged noodles?</p>
+        
+        
+        <div class='footer'>
+          <p>ROOM | ONE FUCKED UP KID</p>
+        </div>
+        
+        <div class="mapbottom">
+        <div class="movingbottom"></div>
+          
+          <div class='nextbottom'>
+          <div id="next_arrow"><a href=#></a></div>
+          </div>
+      
+          <div class='backbottom'>
+          <a href="https://imhidinginroom.github.io/room.github.io/">
+          <div id='back_arrow'></div></a>
+        </div>
+        </div>  
+        </div>    
+      
+      
+        <script>
+        setInterval(function(){blink()}, 10);
+        function blink() {
+        $("#location").fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+        };
+        function loadswitharrow(){
+        }
+
+          $(document).ready(function(){
+              $(".map").animate({
+                 opacity: 1,
+                 left: "+=10",
+              }, 900, function() {
+              });
+            
+              $(".container").animate({
+                 opacity: 1,
+                 
+              }, 1200, function() {
+              });
+            
+              $("#next_tag").hide();
+              $(".map").addClass("fixed");            
+
+              $('#contact').click(function(){
+                  $('#mail, #info').fadeToggle();
+              })
+          });
+        </script>          
+	</body>
+</html>
